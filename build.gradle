@@ -45,21 +45,21 @@ repositories {
 }
 
 dependencies {
-	implementation (group: "com.google.guava", name: "guava", version: "18.0") {exclude group: "com.google.code.findbugs"}
+	compile (group: "com.google.guava", name: "guava", version: "18.0") {exclude group: "com.google.code.findbugs"}
 
-	implementation "commons-beanutils:commons-beanutils:1.9.2"
-	implementation "commons-codec:commons-codec:1.10"
+	compile "commons-beanutils:commons-beanutils:1.9.2"
+	compile "commons-codec:commons-codec:1.10"
 
-	implementation "com.complexible.common:cp-openrdf-utils:4.0.2"
-	implementation ("com.complexible.common:cp-common-utils:5.0.1") {exclude group: "org.slf4j"}
+	compile "com.complexible.common:cp-openrdf-utils:4.0.2"
+	compile ("com.complexible.common:cp-common-utils:5.0.1") {exclude group: "org.slf4j"}
 
 	// these should be coming from cp-openrdf-utils, but it's missing these
-	implementation "org.openrdf.sesame:sesame-rio-ntriples:4.0.0"
+	compile "org.openrdf.sesame:sesame-rio-ntriples:4.0.0"
 
-	implementation "org.slf4j:slf4j-api:1.7.7"
-	implementation "org.slf4j:slf4j-jdk14:1.7.7"
+	compile "org.slf4j:slf4j-api:1.7.7"
+	compile "org.slf4j:slf4j-jdk14:1.7.7"
 
-	testImplementation 'junit:junit:4.11'
+	testCompile 'junit:junit:4.11'
 }
 
 tasks.withType(Test) {
