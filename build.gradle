@@ -1,5 +1,5 @@
 apply plugin: "idea"
-apply plugin: "java"
+apply plugin: "java-library"
 apply plugin: "maven-publish"
 
 wrapper {
@@ -45,17 +45,13 @@ repositories {
 }
 
 dependencies {
-	implementation (group: "com.google.guava", name: "guava", version: "18.0") {
-		exclude group: "com.google.code.findbugs"
-	}
+	implementation (group: "com.google.guava", name: "guava", version: "18.0") {exclude group: "com.google.code.findbugs"}
 
 	implementation "commons-beanutils:commons-beanutils:1.9.2"
 	implementation "commons-codec:commons-codec:1.10"
 
 	implementation "com.complexible.common:cp-openrdf-utils:4.0.2"
-	implementation ("com.complexible.common:cp-common-utils:5.0.1") {
-		exclude group: "org.slf4j"
-	}
+	implementation ("com.complexible.common:cp-common-utils:5.0.1") {exclude group: "org.slf4j"}
 
 	// these should be coming from cp-openrdf-utils, but it's missing these
 	implementation "org.openrdf.sesame:sesame-rio-ntriples:4.0.0"
