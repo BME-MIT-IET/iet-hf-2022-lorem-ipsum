@@ -35,4 +35,6 @@ jobs:
       with:
         arguments: build
     - name: Test with Gradle
-      run: gradle test
+      run: | 
+         ./gradlew wrapper --gradle-version=6.7.1
+         ./gradlew test
