@@ -3,7 +3,7 @@ apply plugin: "java-library"
 apply plugin: "maven-publish"
 
 wrapper {
-	gradleVersion = '7.2'
+	gradleVersion = '4.4'
 	distributionUrl = "http://services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
 }
 
