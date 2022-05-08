@@ -4,7 +4,7 @@ apply plugin: "maven"
 
 task wrapper(type: Wrapper) {
 	gradleVersion = '2.0'
-	distributionUrl = "https://services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
+	distributionUrl = "http://services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
 }
 
 sourceSets {
