@@ -1,6 +1,6 @@
 apply plugin: "idea"
 apply plugin: "java"
-apply plugin: "maven"
+apply plugin: "maven-publish"
 
 task wrapper(type: Wrapper) {
 	gradleVersion = '2.0'
