@@ -63,9 +63,16 @@ A teszt célja: Annak tesztelése, hogy az RDFMapper működik-e üres konstrukt
 
 Elvárt kimenet: Ha az RDFMapper üres contruktort kap, csak egy Instance-t adjon vissza üresen, a kapott classhoz igazítva
 
-## Coverage teszt -
+## Coverage teszt - Lőrincz Alexandra
 
-##Stresszés limitáció teszt - Benedek Boldizsár
+Az IntelliJ programozói környezet segítségével lehetőségünk volt a már meglévő tesztek segítségével egy lefedettség tesztet is futtatni, így a következő eredményeket kaptuk:
+
+![](coverage_test.png)
+
+Az az a tesztek az osztályok 66%-át, a metódusok 64%-át valamint a sorok 71%-át tesztelik.
+
+
+## Stresszés limitáció teszt - Benedek Boldizsár
 Lépések:
 	-Egyszerűbb Person osztály elkészítése
 	-Egyszerűbb Car osztály elkészítése
