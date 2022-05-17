@@ -8,7 +8,7 @@ Ehhez a Person osztályt használtuk fel és majd késöbb bővítettük a teszt
 #### A projekt célja
 A Pinto egy olyan alkalmazás amely fog egy paraméterül kapott Java Bean osztályt, és a megfelelő property-jei mentén RDF-re alakítja. Ezt ugyan úgy visszafele is megtudja tenni.
 
-## Solar Cloud implementation - Valent Barnabás
+## Solar Cloud implementation
 
 - sonarcloud.io weboldal megnyitása, GitHub opció kiválasztása
 - A projekt importálása opció kiválasztása
@@ -25,8 +25,7 @@ A Pinto egy olyan alkalmazás amely fog egy paraméterül kapott Java Bean oszt�
 - Mivel a projekt nem tartalmazott hibákat, így nem volt szükséges javítást eszközölni
 
 
-## Github Action implementálása - Lőrincz Alexandra
-
+## Github Action implementálása
 - A projekt már eredetileg tartalmazott egy build keretrendszert és teszteket
 - Ezeket először lokálisan teszteltem, lefordítottam Gradle-el
 - A tesztek és a projekt is sikeresen lefutott
@@ -38,3 +37,10 @@ A Pinto egy olyan alkalmazás amely fog egy paraméterül kapott Java Bean oszt�
   - Miután ez megvolt a Java verzión is állítanom kellett, hogy kompatibilis legyen a korábban beállított gradle-el
   - Az újabb verziókkal újabb szintaxisok is jártak, így bele kellett nyúlni a build.gradle-be is ahol a megfelelő kulcsszavakat az új verziónak megfelelőre kellett cserélni (compile, testCompile)
   - Legutolsó lépésként pedig egy elég fájó pontot kellett orvosolni. Http helyett https-t kellett írni a fájlba, és így sikeresen le tudta szedni a megfelelő disztribúciót. (https://github.com/BME-MIT-IET/iet-hf-2022-lorem-ipsum/blob/main/build.gradle#L7)
+
+  ## Manuális tesztek - Lőrincz Alexandra & Valent Barnabás
+  
+  Manuális tesztelésre két megközelítést használtunk. A korábban említett Person Java Bean osztályt, valamint a már meglévő projekten belüli teszteket.
+
+  #### Kiválasztott tesztek és azok leírása:
+  
