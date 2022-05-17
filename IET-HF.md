@@ -8,7 +8,7 @@ Ehhez a Person osztályt használtuk fel és majd késöbb bővítettük a teszt
 #### A projekt célja
 A Pinto egy olyan alkalmazás amely fog egy paraméterül kapott Java Bean osztályt, és a megfelelő property-jei mentén RDF-re alakítja. Ezt ugyan úgy visszafele is megtudja tenni.
 
-## Solar Cloud implementation
+## Solar Cloud implementation - Valent Barnabás
 
 - sonarcloud.io weboldal megnyitása, GitHub opció kiválasztása
 - A projekt importálása opció kiválasztása
@@ -25,7 +25,7 @@ A Pinto egy olyan alkalmazás amely fog egy paraméterül kapott Java Bean oszt�
 - Mivel a projekt nem tartalmazott hibákat, így nem volt szükséges javítást eszközölni
 
 
-## Github Action implementálása
+## Github Action implementálása - Lőrincz Alexandra
 - A projekt már eredetileg tartalmazott egy build keretrendszert és teszteket
 - Ezeket először lokálisan teszteltem, lefordítottam Gradle-el
 - A tesztek és a projekt is sikeresen lefutott
