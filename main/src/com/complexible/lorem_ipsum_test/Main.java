@@ -11,9 +11,18 @@ public class Main {
         long startTime = System.currentTimeMillis();
         //Measuring time below
         for(int i = 0; i < 1000000; i++) {
-             aGraph = RDFMapper.create().writeValue(new Person("Michael Grove"));
+            aGraph = RDFMapper.create().writeValue(new Person());
         }
         long estimatedTime = System.currentTimeMillis() - startTime;
+        //Print out measured time
+        System.out.println("Zero attribute: " + estimatedTime);
+
+        startTime = System.currentTimeMillis();
+        //Measuring time below
+        for(int i = 0; i < 1000000; i++) {
+             aGraph = RDFMapper.create().writeValue(new Person("Michael Grove"));
+        }
+        estimatedTime = System.currentTimeMillis() - startTime;
         //Print out measured time
         System.out.println("One attribute: " + estimatedTime);
 
