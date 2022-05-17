@@ -47,6 +47,7 @@ Manuális tesztelésre két megközelítést használtunk. A korábban említett
 ##### testMultipleSubjectsNoIdProvided
 
 A teszt célja: annak tesztelése, hogy létrejönnek-e az RDF entitások, ha nincs id mint megkülönböztető jegy megadva
+
 Elvárt kimenet: RDFMappingException: Multiple subjects found, need to specify the identifier of the object to create
 Azaz az elvárt kimenetet az, hogy nem lehet létrehozni RDF-es elemeket megkülönböztető mező nélkül.
 
