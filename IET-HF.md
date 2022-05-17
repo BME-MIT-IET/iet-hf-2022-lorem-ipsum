@@ -54,9 +54,11 @@ Azaz az elvárt kimenetet az, hogy nem lehet létrehozni RDF-es elemeket megkül
 ##### testWriteMap
 
 A teszt célja: Olyan objektum átadása az RDFMappernek amely egy Map-ben tartalmazza az RDF attribútumokat
+
 Elvárt kimenet: A result tartalmazza a megfelelő subject-et, object-et, tag-eket, és label-eket a kapott attribútum Map szerint
 
 ##### testConstructFromEmpty
 
 A teszt célja: Annak tesztelése, hogy az RDFMapper működik-e üres konstruktorra is.
+
 Elvárt kimenet: Ha az RDFMapper üres contruktort kap, csak egy Instance-t adjon vissza üresen, a kapott classhoz igazítva
