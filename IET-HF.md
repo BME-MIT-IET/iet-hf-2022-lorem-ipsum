@@ -63,6 +63,24 @@ A teszt célja: Annak tesztelése, hogy az RDFMapper működik-e üres konstrukt
 
 Elvárt kimenet: Ha az RDFMapper üres contruktort kap, csak egy Instance-t adjon vissza üresen, a kapott classhoz igazítva
 
+##### testCanIgnoreCardinalityViolation
+
+A teszt célja, hogy kiderüljön, rendeltetésszerűen működik-e a kardinalitás-probléma jelző értékbeállítása. A problémajelző feladata, hogyha egy egy értékű tulajdonság beállításakor két értéket is látunk neki megadva, milyen módon haladjon tovább a program futása. Vagy exception dobása történik, vagy az első érték elfogadása és a többi eldobása egy waning keretében.
+
+A tesztben az első érték elfogadása opció van megadva, ami az adatfájlban a "Clark & Parsia" vagy "Complexible" érték, ezek közül az egyiket várja az assert a helyes lefutáshoz. Mivel nem exceptiont dobunk, ezért helyesen beállítódik az első érték, és sikeresen fut le a teszt.
+
+##### testAnnotationsWithInvalidURI
+
+A teszt célja két RDF modell azonosságának összehasonlítása. Ezt a Models.isomorphic(...) funkcióval végzi el, ami a más privát funkciókat meghívva végigmegy mindkét RDF gráfon, összehasonlítva őket és egyezés esetén igaz értékkel tér vissza, egyébként hamissal.
+
+A teszt során létrehozunk egy BadCompany objektumot, ami nem valid névvel rendelkezik, így effektív az egyetlen elem benne a weboldal lesz. Ezek után létrehozunk egy gráfot, aminek csak egy eleme van, a "/data/bad_company.nt" fájlban megadott weboldal. A két létrehozott modellt összehasonlítjuk, aminek az eredménye igaz lesz, mivel mindketten csak egy weboldal címet tárolnak.
+
+##### testAnnotationsWithInvalidURIFatal
+
+A teszt célja az RDFMapper.builder() függvényében a MappingOptions.IGNORE_INVALID_ANNOTATIONS hamis értéke esetén helyesen működik-e a program. A jelzés hamisra állításával, amennyiben egy invalid annotációt akarnánk megadni az RDF elem létrehozásakor, a program exception dobással jelzi ezt a hibát.
+
+A teszt során létrehozunk egy BadCompany objektumot, ami rendelkezik egy nem valid névvel és egy valid weboldallal. Amikor az RDFMapper builderével létre kívánnánk hozni az objektumot, a hamisra állított jelzés miatt exceptiont kapunk futtatáskor, így sikeres tesztet generálva.
+
 ## Coverage teszt - Lőrincz Alexandra
 
 Az IntelliJ programozói környezet segítségével lehetőségünk volt a már meglévő tesztek segítségével egy lefedettség tesztet is futtatni, így a következő eredményeket kaptuk:
