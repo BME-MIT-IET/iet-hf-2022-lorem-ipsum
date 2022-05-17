@@ -12,3 +12,5 @@
     - Először egy github secretet kellett a projekthez adni
     - Utána a pom.xml fájl kiegészítése a SonarCloud propertijével
     - Végül a build.yaml fájl létrehozása, és a megadott kóddal való feltöltése
+- Az analízis módszer beállítása után nem akart tesztelni a program, egy kis kutatás után jöttem rá, hogy a "new code definition" beállítása elmaradt, így, mivel hosszú életű a branch, nem futott le rajta teszt. Itt a new code definíciójának átírása megjavította a problémát, a 30 napnál frissebb kódrészeket fogja tesztelni futtatásokkor
+- Mivel a projekt nem tartalmazott hibákat, így nem volt szükséges javítást eszközölni
