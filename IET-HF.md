@@ -62,3 +62,5 @@ Elvárt kimenet: A result tartalmazza a megfelelő subject-et, object-et, tag-ek
 A teszt célja: Annak tesztelése, hogy az RDFMapper működik-e üres konstruktorra is.
 
 Elvárt kimenet: Ha az RDFMapper üres contruktort kap, csak egy Instance-t adjon vissza üresen, a kapott classhoz igazítva
+
+## Coverage teszt -
