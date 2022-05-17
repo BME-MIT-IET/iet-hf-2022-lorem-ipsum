@@ -73,14 +73,14 @@ Az az a tesztek az osztályok 66%-át, a metódusok 64%-át valamint a sorok 71%
 
 
 ## Stresszés limitáció teszt - Benedek Boldizsár
-Lépések:
+#### Lépések:
 	-Egyszerűbb Person osztály elkészítése
 	-Egyszerűbb Car osztály elkészítése
 	-Egy alap main osztály elkészítése
-Feladatok:
+#### Feladatok:
 	-Megnézni, hogy különböző bemeneteknél mennyire romlik a performancia ha egyáltalán romlik
 	-Limitációk tesztelése
-Eredmény:
+#### Eredmény:
 	-Üres konstuktornál egy üres Graph -et kaptam vissza nem pedig egy nullt, ez pedig kicsit félrevezető lehet
 	-Performanica beli romlás az egy egy új apraméterenként kb. 10% volt, 1 millió iterációnál az 1 paraméteres teszt 3000ms -ig futott, 2 -nél már 3300ms
 	-Performancia beli romlás egymásba ágyazott objektumoknál viszont már jelentősebb, 3500ms- ről 5600ms -re ugrott, egy egyszerűbb Car osztály hozzáadásától is
