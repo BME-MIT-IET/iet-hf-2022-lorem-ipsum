@@ -38,9 +38,9 @@ A Pinto egy olyan alkalmazás amely fog egy paraméterül kapott Java Bean oszt�
   - Az újabb verziókkal újabb szintaxisok is jártak, így bele kellett nyúlni a build.gradle-be is ahol a megfelelő kulcsszavakat az új verziónak megfelelőre kellett cserélni (compile, testCompile)
   - Legutolsó lépésként pedig egy elég fájó pontot kellett orvosolni. Http helyett https-t kellett írni a fájlba, és így sikeresen le tudta szedni a megfelelő disztribúciót. (https://github.com/BME-MIT-IET/iet-hf-2022-lorem-ipsum/blob/main/build.gradle#L7)
 
-  ## Manuális tesztek - Lőrincz Alexandra & Valent Barnabás
+## Manuális tesztek - Lőrincz Alexandra & Valent Barnabás
   
-  Manuális tesztelésre két megközelítést használtunk. A korábban említett Person Java Bean osztályt, valamint a már meglévő projekten belüli teszteket.
+Manuális tesztelésre két megközelítést használtunk. A korábban említett Person Java Bean osztályt, valamint a már meglévő projekten belüli teszteket.
 
-  #### Kiválasztott tesztek és azok leírása:
+#### Kiválasztott tesztek és azok leírása:
   
