@@ -6,7 +6,20 @@ Mint ahogy a READ.me-ben is szerepel egy egyszerűbb Java Bean osztály segíts�
 Ehhez a Person osztályt használtuk fel és majd késöbb bővítettük a teszteknek megfelelően.
 
 #### A projekt célja
-A Pinto egy olyan alkalmazás amely fog egy paraméterül kapott Java Bean osztályt, és a megfelelő property-jei mentén RDF-re alakítja. Ezt ugyan úgy visszafele is megtudja tenni.
+A Pinto egy olyan Java keretrendszer amely egy paraméterül kapott Java Bean osztály, a megfelelő property-jei mentén RDF-re alakítja. Ezt ugyan úgy visszafele is megtudja tenni.
+
+Azaz a paraméterül kapott Person osztály objektuma a következő képpen alakul átt.
+
+Person("Michael Fox") &#8594; <tag:complexible:pinto:f97658c7048377a026111c7806bd7280> <tag:complexible:pinto:name> "Michael Fox"^^<http://www.w3.org/2001/XMLSchema#string>
+
+Láthatóak a megfelelő RDF property-k, a subject, object és a label.
+
+##### Java Bean magyarázat
+- A Java Bean egy Java konvenció vagy standard egy osztály létrehozására
+- 3 alapvető tulajdonsága van egy ilyen osztálynak
+  1. Minden property private &#8594; getter/setterek használata
+  2. Van egy publikus üres konstruktora kötelezően
+  3. Implementálja a Serializable interfészt
 
 ## Solar Cloud implementation - Valent Barnabás
 
