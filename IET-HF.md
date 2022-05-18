@@ -1,6 +1,4 @@
-
-
-## Első lépések
+# Első lépések
 A házi feladat első lépéseként végig olvastuk a projekt leírását valamint megvizsgáltuk a projekt fájljait és tesztjeit. Mivel ez a projekt sajnos nem rendelkezik UI-al így a példakód kipróbálása mellett döntöttünk.
 Mint ahogy a READ.me-ben is szerepel egy egyszerűbb Java Bean osztály segítségével már tesztelhető is lett a program.
 Ehhez a Person osztályt használtuk fel és majd késöbb bővítettük a teszteknek megfelelően.
@@ -20,6 +18,8 @@ Láthatóak a megfelelő RDF property-k, a subject, object és a label.
   1. Minden property private &#8594; getter/setterek használata
   2. Van egy publikus üres konstruktora kötelezően
   3. Implementálja a Serializable interfészt
+
+# Elvégzett feladatok és tesztek
 
 ## Solar Cloud implementation - Valent Barnabás
 
