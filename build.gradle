@@ -1,5 +1,7 @@
 apply plugin: "idea"
 apply plugin: "java"
+apply plugin: "maven-publish"
+apply plugin: "jacoco"
 apply plugin: "maven"
 
 task wrapper(type: Wrapper) {

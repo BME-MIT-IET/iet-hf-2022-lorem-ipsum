@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.complexible.pinto.RDFMapperTests" tests="56" skipped="9" failures="0" errors="0" timestamp="2022-05-19T15:25:30" hostname="DESKTOP-H5276I2" time="0.606">
+  <properties/>
+  <testcase name="testWriteEnumSet" classname="com.complexible.pinto.RDFMapperTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRdfIdWithNoValuesSet" classname="com.complexible.pinto.RDFMapperTests" time="0.291"/>
+  <testcase name="testAnnotationsWithInvalidURI" classname="com.complexible.pinto.RDFMapperTests" time="0.098"/>
+  <testcase name="testNoInvalidPrefixToBuilder" classname="com.complexible.pinto.RDFMapperTests" time="0.0"/>
+  <testcase name="testWriteListOfPrimitives" classname="com.complexible.pinto.RDFMapperTests" time="0.027"/>
+  <testcase name="testWriteEnumInvalidIriFatal" classname="com.complexible.pinto.RDFMapperTests" time="0.006"/>
+  <testcase name="testWritePrimitives" classname="com.complexible.pinto.RDFMapperTests" time="0.008"/>
+  <testcase name="testWriteWithCodec" classname="com.complexible.pinto.RDFMapperTests" time="0.005"/>
+  <testcase name="testWriteSetsIdentifiableId" classname="com.complexible.pinto.RDFMapperTests" time="0.018"/>
+  <testcase name="testReadWithUnmatchedRDF" classname="com.complexible.pinto.RDFMapperTests" time="0.02"/>
+  <testcase name="testNoDefaultConstructor" classname="com.complexible.pinto.RDFMapperTests" time="0.003"/>
+  <testcase name="testCustomDatatypingOfLiteralWithInvalidDatatype" classname="com.complexible.pinto.RDFMapperTests" time="0.003"/>
+  <testcase name="testWriteMixed" classname="com.complexible.pinto.RDFMapperTests" time="0.008"/>
+  <testcase name="testWriteTwice" classname="com.complexible.pinto.RDFMapperTests" time="0.002"/>
+  <testcase name="testReadPrimitives" classname="com.complexible.pinto.RDFMapperTests" time="0.005"/>
+  <testcase name="testAnnotationsWithInvalidURIFatal" classname="com.complexible.pinto.RDFMapperTests" time="0.002"/>
+  <testcase name="testConstructFromEmpty" classname="com.complexible.pinto.RDFMapperTests" time="0.0"/>
+  <testcase name="testWriteMap" classname="com.complexible.pinto.RDFMapperTests" time="0.021"/>
+  <testcase name="testReadCustomCollectionMapping" classname="com.complexible.pinto.RDFMapperTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testUseSerializationAnnotations" classname="com.complexible.pinto.RDFMapperTests" time="0.002"/>
+  <testcase name="testWriteEnumInvalidIri" classname="com.complexible.pinto.RDFMapperTests" time="0.003"/>
+  <testcase name="testProxyCreation" classname="com.complexible.pinto.RDFMapperTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testWriteEnum" classname="com.complexible.pinto.RDFMapperTests" time="0.0"/>
+  <testcase name="testCharBeanTypeWithLongString" classname="com.complexible.pinto.RDFMapperTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testReadMixed" classname="com.complexible.pinto.RDFMapperTests" time="0.004"/>
+  <testcase name="testReadTwice" classname="com.complexible.pinto.RDFMapperTests" time="0.007"/>
+  <testcase name="testMultipleValuesForNonIterableProperty" classname="com.complexible.pinto.RDFMapperTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testWriteListOfObjects" classname="com.complexible.pinto.RDFMapperTests" time="0.004"/>
+  <testcase name="testWriteWithLangTag" classname="com.complexible.pinto.RDFMapperTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testWriteAnnotationsWithNamespace" classname="com.complexible.pinto.RDFMapperTests" time="0.007"/>
+  <testcase name="testReadRdfListOfObjects" classname="com.complexible.pinto.RDFMapperTests" time="0.003"/>
+  <testcase name="testReadSetsIdentifiableId" classname="com.complexible.pinto.RDFMapperTests" time="0.001"/>
+  <testcase name="testReadEnum" classname="com.complexible.pinto.RDFMapperTests" time="0.004"/>
+  <testcase name="testReadWithLangTag" classname="com.complexible.pinto.RDFMapperTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testMultipleSubjectsNoIdProvided" classname="com.complexible.pinto.RDFMapperTests" time="0.002"/>
+  <testcase name="testIdentifiableNoIdFallbackToDefault" classname="com.complexible.pinto.RDFMapperTests" time="0.001"/>
+  <testcase name="testUseRdfIdForIdentification" classname="com.complexible.pinto.RDFMapperTests" time="0.0"/>
+  <testcase name="testReadMap" classname="com.complexible.pinto.RDFMapperTests" time="0.012"/>
+  <testcase name="testURIMapping" classname="com.complexible.pinto.RDFMapperTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testWriteListsOfObjectsAsRdfListWithAnnotation" classname="com.complexible.pinto.RDFMapperTests" time="0.005"/>
+  <testcase name="testWriteListsOfPrimitivesAsRdfListsWithOption" classname="com.complexible.pinto.RDFMapperTests" time="0.002"/>
+  <testcase name="testCardinalityViolationFatal" classname="com.complexible.pinto.RDFMapperTests" time="0.002"/>
+  <testcase name="testReadWithCodec" classname="com.complexible.pinto.RDFMapperTests" time="0.001"/>
+  <testcase name="testReadListOfPrimitives" classname="com.complexible.pinto.RDFMapperTests" time="0.002"/>
+  <testcase name="testNoInvalidNamespaceToBuilder" classname="com.complexible.pinto.RDFMapperTests" time="0.0"/>
+  <testcase name="testCanIgnoreCardinalityViolation" classname="com.complexible.pinto.RDFMapperTests" time="0.002"/>
+  <testcase name="testUnidentifiable" classname="com.complexible.pinto.RDFMapperTests" time="0.0"/>
+  <testcase name="testReadEnumSet" classname="com.complexible.pinto.RDFMapperTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCustomDatatypingOfLiteralWithInvalidDatatypeFatal" classname="com.complexible.pinto.RDFMapperTests" time="0.0"/>
+  <testcase name="testReadListOfObjects" classname="com.complexible.pinto.RDFMapperTests" time="0.003"/>
+  <testcase name="testWriteListsOfPrimitivesAsRdfListWithAnnotation" classname="com.complexible.pinto.RDFMapperTests" time="0.004"/>
+  <testcase name="testCustomDatatypingOfLiteral" classname="com.complexible.pinto.RDFMapperTests" time="0.001"/>
+  <testcase name="testReadRdfListOfPrimitives" classname="com.complexible.pinto.RDFMapperTests" time="0.001"/>
+  <testcase name="testCannotConstructAbstract" classname="com.complexible.pinto.RDFMapperTests" time="0.002"/>
+  <testcase name="testIdentifiableNoIdNoFallback" classname="com.complexible.pinto.RDFMapperTests" time="0.0"/>
+  <testcase name="testWriteListsOfObjectsAsRdfListWithOption" classname="com.complexible.pinto.RDFMapperTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[máj. 19, 2022 11:25:30 DE com.complexible.pinto.RDFMapper iri
+INFO: An invalid uri "not a valid uri" was used, ignoring property with annotation
+máj. 19, 2022 11:25:30 DE com.complexible.pinto.RDFMapper iri
+INFO: An invalid uri "not a valid uri" was used, ignoring property with annotation
+máj. 19, 2022 11:25:30 DE com.complexible.pinto.RDFMapper iri
+INFO: An invalid uri "not a valid uri" was used, ignoring property with annotation
+máj. 19, 2022 11:25:30 DE com.complexible.pinto.RDFMapper iri
+INFO: An invalid uri "not a valid uri" was used, ignoring property with annotation
+máj. 19, 2022 11:25:30 DE com.complexible.pinto.RDFMapper iri
+INFO: An invalid uri "not a valid uri" was used, ignoring property with annotation
+máj. 19, 2022 11:25:30 DE com.complexible.pinto.RDFMapper iri
+INFO: An invalid uri "not a valid uri" was used, ignoring property with annotation
+máj. 19, 2022 11:25:30 DE com.complexible.pinto.RDFMapper iri
+INFO: An invalid uri "invalid URI" was used, ignoring property with annotation
+máj. 19, 2022 11:25:30 DE com.complexible.pinto.RDFMapper$DefaultMapFactory create
+WARNING: java.beans.PropertyDescriptor[name=map; propertyType=interface java.util.Map; readMethod=public java.util.Map com.complexible.pinto.RDFMapperTests$ClassWithMap.getMap(); writeMethod=public void com.complexible.pinto.RDFMapperTests$ClassWithMap.setMap(java.util.Map)] uses a map type, but it cannot be instantiated, using a default LinkedHashMap
+máj. 19, 2022 11:25:30 DE com.complexible.pinto.RDFMapper readValue
+WARNING: Property type of name is class java.lang.String, expected a single value, but 2 were found.  MappingOptions is set to ignore this, so using only the first value.
+]]></system-err>
+</testsuite>

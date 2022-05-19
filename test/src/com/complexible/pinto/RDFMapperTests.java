@@ -321,7 +321,7 @@ public class RDFMapperTests {
 		                                                                 SimpleValueFactory.getInstance().createIRI("tag:complexible:pinto:4f372f7bfb03f7b80be8777603d3b1ed"));
 		assertEquals(aExpected, aResult);
 	}
-
+//////////!!MEGÍRNI
 	@Test
 	@Ignore
 	public void testURIMapping() throws Exception {
@@ -481,7 +481,7 @@ public class RDFMapperTests {
 		// here when checking for correctness.
 		assertEquals(2, aGraph.size());
 	}
-
+////////////megírni
 	@Test
 	@Ignore
 	public void testProxyCreation() throws Exception {
@@ -658,7 +658,7 @@ public class RDFMapperTests {
 
 		assertEquals(aExpected, aResult);
 	}
-
+/////////////Megírni
 	@Test
 	@Ignore
 	public void testReadEnumSet() throws Exception {
@@ -778,6 +778,38 @@ public class RDFMapperTests {
 		                                 .readValue(aGraph, ClassWithMap.class,
 		                                                    SimpleValueFactory.getInstance().createIRI("tag:complexible:pinto:06f95e70fea33fcd99e6804b02f96cc9")));
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	public static final class Files3 {
 		public static File classPath(final String thePath) {
