@@ -14,7 +14,7 @@ apply plugin: "java"
 apply plugin: "maven"
 
 
-wrapper(type: Wrapper) {
+wrapper {
 	gradleVersion = '5.0'
 	distributionUrl = "http://services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
 }
