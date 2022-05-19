@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.openrdf.sesame:sesame-util:4.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openrdf.sesame/sesame-util/4.0.0/fc96e5769f0a5605b00a29fa3a050529f8e69721/sesame-util-4.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openrdf.sesame/sesame-util/4.0.0/c2c17f87404b42d9494b04dd2c1e5b39e332a48e/sesame-util-4.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
