@@ -25,23 +25,23 @@ import com.complexible.pinto.annotations.RdfProperty;
 import com.complexible.pinto.annotations.RdfsClass;
 import com.complexible.pinto.codecs.UUIDCodec;
 import com.complexible.pinto.impl.IdentifiableImpl;
+import com.complexible.pinto.impl.SourcedObjectImpl;
 import com.google.common.base.Charsets;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import com.google.common.hash.Hashing;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.*;
 import org.openrdf.model.Literal;
 import org.openrdf.model.Model;
 import org.openrdf.model.Resource;
 import org.openrdf.model.Statement;
+import org.openrdf.model.impl.EmptyModel;
 import org.openrdf.model.impl.SimpleValueFactory;
 import org.openrdf.model.util.Models;
 import org.openrdf.model.vocabulary.XMLSchema;
 
+import java.beans.PropertyDescriptor;
 import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -56,9 +56,12 @@ import java.util.Set;
 import java.util.SortedSet;
 import java.util.TimeZone;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+
+import static org.mockito.Mockito.*;
 
 /**
  * <p></p>
@@ -321,7 +324,7 @@ public class RDFMapperTests {
 		                                                                 SimpleValueFactory.getInstance().createIRI("tag:complexible:pinto:4f372f7bfb03f7b80be8777603d3b1ed"));
 		assertEquals(aExpected, aResult);
 	}
-//////////!!MEGÍRNI
+	//TODO
 	@Test
 	@Ignore
 	public void testURIMapping() throws Exception {
@@ -481,7 +484,7 @@ public class RDFMapperTests {
 		// here when checking for correctness.
 		assertEquals(2, aGraph.size());
 	}
-////////////megírni
+	//TODO
 	@Test
 	@Ignore
 	public void testProxyCreation() throws Exception {
@@ -658,7 +661,7 @@ public class RDFMapperTests {
 
 		assertEquals(aExpected, aResult);
 	}
-/////////////Megírni
+	//TODO
 	@Test
 	@Ignore
 	public void testReadEnumSet() throws Exception {
@@ -782,30 +785,24 @@ public class RDFMapperTests {
 
 
 
+	//Tesztek
+
+	@Test
+	public void teszt1(){
+		RDFMapper aMapper = RDFMapper.create();
+
+		SourcedObjectImpl x = new SourcedObjectImpl();
 
 
+		aMapper.readValue(x.getSourceGraph(),null, null);
+		assertEquals(aMapper.readValue(x.getSourceGraph(),null, null), null);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	}
+	@Test
+	public void teszt2(){
+		SourcedObjectImpl x = new SourcedObjectImpl();
+		assertEquals(x.getSourceGraph(), null);
+	}
 
 
 

@@ -1074,11 +1074,13 @@ public final class RDFMapper {
 		/**
 		 * Specify a list of namespaces to be used by the mapper
 		 *
+		 *
+		 * @param namespaces
 		 * @param theNamespaces the namespaces
 		 *
 		 * @return              this builder
 		 */
-		public Builder namespaces(final Iterable<Namespace> theNamespaces) {
+		public Builder namespaces(Object namespaces, final Iterable<Namespace> theNamespaces) {
 			for (Namespace aNamespace : theNamespaces) {
 				namespace(aNamespace);
 			}

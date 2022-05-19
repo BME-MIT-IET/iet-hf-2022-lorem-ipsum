@@ -5,78 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42062108-e40f-4faf-af2e-c01b1241e503" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/iet-hf-2022-lorem-ipsum.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/iet-hf-2022-lorem-ipsum.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_complexible_common_cp_common_utils_5_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_complexible_common_cp_openrdf_utils_4_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_18_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_beanutils_commons_beanutils_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_collections_commons_collections_3_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_commons_io_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openrdf_sesame_sesame_model_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openrdf_sesame_sesame_query_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openrdf_sesame_sesame_queryalgebra_model_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openrdf_sesame_sesame_queryparser_api_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openrdf_sesame_sesame_queryparser_sparql_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openrdf_sesame_sesame_queryresultio_api_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openrdf_sesame_sesame_repository_api_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openrdf_sesame_sesame_rio_api_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openrdf_sesame_sesame_rio_datatypes_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openrdf_sesame_sesame_rio_languages_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openrdf_sesame_sesame_rio_ntriples_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openrdf_sesame_sesame_rio_turtle_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openrdf_sesame_sesame_sail_api_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openrdf_sesame_sesame_util_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_jdk14_1_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__classworlds_classworlds_1_1_alpha_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_sink_api_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_aether_provider_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_manager_2_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_core_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_builder_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_builder_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_reporting_maven_reporting_api_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_file_management_1_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_maven_shared_io_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_1_0_alpha_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_classworlds_2_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_component_annotations_1_5_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_container_default_1_0_alpha_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_0_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jacoco_jacoco_maven_plugin_0_8_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jacoco_org_jacoco_agent_runtime_0_8_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jacoco_org_jacoco_core_0_8_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jacoco_org_jacoco_report_0_8_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_analysis_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_aether_aether_api_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_aether_aether_impl_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_aether_aether_spi_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_aether_aether_util_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_plexus_plexus_cipher_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_plexus_plexus_sec_dispatcher_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_guice_noaop_2_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_inject_bean_1_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_inject_plexus_1_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/iet-hf-2022-lorem-ipsum.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/iet-hf-2022-lorem-ipsum.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/iet-hf-2022-lorem-ipsum.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/iet-hf-2022-lorem-ipsum.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/cache.properties.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/cache.properties.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshots.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/taskArtifacts.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshotUsage.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshotUsage.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/complexible/pinto/RDFMapper$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/complexible/pinto/RDFMapper$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/complexible/pinto/RDFMapper$Dates2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/complexible/pinto/RDFMapper$Dates2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/complexible/pinto/RDFMapper$DefaultCollectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/complexible/pinto/RDFMapper$DefaultCollectionFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/complexible/pinto/RDFMapper$DefaultMapFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/com/complexible/pinto/RDFMapper$DefaultMapFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$BadCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$BadCompany.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$CannotConstructMe.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$CannotConstructMe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$CannotConstructMe2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$CannotConstructMe2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithEnumSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithEnumSet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithMixed.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithMixed.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithObjectList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithObjectList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithPrimitiveLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithPrimitiveLists.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithPrimitiveRdfList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithPrimitiveRdfList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithPrimitives.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithPrimitives.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithRdfObjectList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ClassWithRdfObjectList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$Company.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$Files3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$Files3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ShortCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$ShortCompany.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$TestEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests$TestEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/com/complexible/pinto/RDFMapperTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/classes/com.complexible.pinto.RDFMapperTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/classes/com.complexible.pinto.RDFMapperTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/packages/com.complexible.pinto.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/packages/com.complexible.pinto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/TEST-com.complexible.pinto.RDFMapperTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/TEST-com.complexible.pinto.RDFMapperTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/binary/test/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/binary/test/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/binary/test/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/binary/test/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/binary/test/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/binary/test/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/com/complexible/pinto/RDFMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/com/complexible/pinto/RDFMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hu.bme.mit.iet-hf-2022-lorem-ipsum-0.5.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/hu.bme.mit.iet-hf-2022-lorem-ipsum-0.5.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/css/maven-base.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/css/maven-base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/css/print.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/css/print.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/com/complexible/pinto/RDFMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/com/complexible/pinto/RDFMapperTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,10 +90,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn verify" />
+      <command value="mvn clean verify" />
+      <command value="mvn clean site" />
+      <command value="mvn clean site verify" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.RDFMapperTests">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -132,22 +114,145 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.complexible.lorem_ipsum_test.Main" />
-      <module name="iet-hf-2022-lorem-ipsum.main" />
-      <extension name="coverage">
+    <configuration name="Unnamed" type="AndroidJUnit" factoryName="Android JUnit" editBeforeRun="true" nameIsGenerated="true">
+      <output_file path="$PROJECT_DIR$/target" is_save="true" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage" track_test_folders="true" runner="jacoco">
         <pattern>
-          <option name="PATTERN" value="com.complexible.lorem_ipsum_test.*" />
+          <option name="PATTERN" value="com.complexible.pinto.RDFMapperTests" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RDFMapperTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.complexible.pinto.RDFMapperTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RDFMapperTests.teszt1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.complexible.pinto.RDFMapperTests.teszt1&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RDFMapperTests.teszt3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.complexible.pinto.RDFMapperTests.teszt3&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RDFMapperTests.teszt4" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.complexible.pinto.RDFMapperTests.teszt4&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RDFMapperTests.teszt5" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.complexible.pinto.RDFMapperTests.teszt5&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Android JUnit.Unnamed" />
+      <item itemvalue="Gradle.RDFMapperTests" />
+      <item itemvalue="Gradle.RDFMapperTests.teszt4" />
+      <item itemvalue="Gradle.RDFMapperTests.teszt5" />
+      <item itemvalue="Gradle.RDFMapperTests.teszt3" />
+      <item itemvalue="Gradle.RDFMapperTests.teszt1" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.RDFMapperTests" />
+        <item itemvalue="Gradle.RDFMapperTests.teszt1" />
+        <item itemvalue="Gradle.RDFMapperTests.teszt3" />
+        <item itemvalue="Gradle.RDFMapperTests.teszt4" />
+        <item itemvalue="Gradle.RDFMapperTests.teszt5" />
       </list>
     </recent_temporary>
   </component>
@@ -165,5 +270,13 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/iet_hf_2022_lorem_ipsum$RDFMapperTests.ic" NAME="RDFMapperTests Coverage Results" MODIFIED="1652996497917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/iet_hf_2022_lorem_ipsum$RDFMapperTests_testReadEnumSet.ic" NAME="RDFMapperTests.testReadEnumSet Coverage Results" MODIFIED="1652980170496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/iet_hf_2022_lorem_ipsum$RDFMapperTests_teszt3.ic" NAME="RDFMapperTests.teszt3 Coverage Results" MODIFIED="1652994586788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/iet_hf_2022_lorem_ipsum$RDFMapperTests_teszt4.ic" NAME="RDFMapperTests.teszt4 Coverage Results" MODIFIED="1652994516290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/iet_hf_2022_lorem_ipsum$RDFMapperTests_testMultipleSubjectsNoIdProvided.ic" NAME="RDFMapperTests.testMultipleSubjectsNoIdProvided Coverage Results" MODIFIED="1652978085919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/iet_hf_2022_lorem_ipsum$RDFMapperTests_testWriteEnumSet.ic" NAME="RDFMapperTests.testWriteEnumSet Coverage Results" MODIFIED="1652979548730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
