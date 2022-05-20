@@ -31,11 +31,9 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import com.google.common.hash.Hashing;
+import net.bytebuddy.implementation.bytecode.collection.CollectionFactory;
 import org.junit.*;
-import org.openrdf.model.Literal;
-import org.openrdf.model.Model;
-import org.openrdf.model.Resource;
-import org.openrdf.model.Statement;
+import org.openrdf.model.*;
 import org.openrdf.model.impl.EmptyModel;
 import org.openrdf.model.impl.SimpleValueFactory;
 import org.openrdf.model.util.Models;
@@ -45,6 +43,7 @@ import java.beans.PropertyDescriptor;
 import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.text.ParseException;
 import java.util.Collection;
 import java.util.Date;
 import java.util.EnumSet;
@@ -58,9 +57,7 @@ import java.util.TimeZone;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 /**
@@ -804,7 +801,26 @@ public class RDFMapperTests {
 		assertEquals(x.getSourceGraph(), null);
 	}
 
+	@Test
+	public void teszt3CollectionFactory() throws Exception {
+		RDFMapper.CollectionFactory mCollectionFactory = new RDFMapper.DefaultCollectionFactory();
+		RDFMapper.Builder collectionFactory = RDFMapper.builder().collectionFactory(mCollectionFactory);
+		assertNotNull(collectionFactory);
+	}
 
+	@Test
+	public void teszt4MapFactory() throws Exception {
+		RDFMapper.MapFactory mMapFactory = new RDFMapper.DefaultMapFactory();
+		RDFMapper.Builder mapFactory = RDFMapper.builder().mapFactory(mMapFactory);
+		assertNotNull(mapFactory);
+	}
+
+	@Test
+	public void teszt5ValueFactory() throws Exception {
+		ValueFactory mValueFactory = SimpleValueFactory.getInstance();
+		RDFMapper.Builder valueFactory = RDFMapper.builder().valueFactory(mValueFactory);
+		assertNotNull(valueFactory);
+	}
 
 
 
