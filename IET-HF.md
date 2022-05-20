@@ -117,7 +117,7 @@ Az az a tesztek az osztályok 66%-át, a metódusok 64%-át valamint a sorok 71%
 - Performanciabeli romlás egymásba ágyazott objektumoknál viszont már jelentősebb, 3500ms- ről 5600ms -re ugrott, egy egyszerűbb Car osztály hozzáadásától is
    - Több egymásba ágyazott objektumnál ez hamar összeadódhat!
 
-## Unit Test implementation - Péter Noémi Zsuzsanna
+## Unit Test implementálása - Péter Noémi Zsuzsanna
 
 - Unit tesztekkel való ismerkedés, előadás és gyakorlat átnézése.
 - Először a verziók beállításával kellett foglalkoznom.
