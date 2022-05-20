@@ -116,3 +116,26 @@ Az az a tesztek az osztályok 66%-át, a metódusok 64%-át valamint a sorok 71%
 - Performanicabeli romlás az egy egy új apraméterenként kb. 10% volt, 1 millió iterációnál az 1 paraméteres teszt 3000ms -ig futott, 2 -nél már 3300ms
 - Performanciabeli romlás egymásba ágyazott objektumoknál viszont már jelentősebb, 3500ms- ről 5600ms -re ugrott, egy egyszerűbb Car osztály hozzáadásától is
    - Több egymásba ágyazott objektumnál ez hamar összeadódhat!
+
+## Unit Test implementálása - Péter Noémi Zsuzsanna
+
+- Unit tesztekkel való ismerkedés, előadás és gyakorlat átnézése.
+- Először a verziók beállításával kellett foglalkoznom.
+- Gradle megjavítása. Projekt futtatható állapotba való állítása.
+- Kód értelmezése.
+- Jacoco megismerése és kipróbálása
+    - Sikertelen üzembehelyezés.
+- IntelliJ Code Coverage használata
+    - kezdeti elért lefedettség megvizsgálása
+- Unit tesztek készítése az RDFMapperTests.java fájlba:
+
+Végső kódlefedettség:
+
+![](unittest_lefedettseg.png)
+
+  - RDFMapper.java osztályban levő függvények tesztelése
+      - kódlefedettség növelése method szempontból: 86% --> 91%
+  - SourcedObjectImpl.java osztályban levő függvények tesztelése
+      - kódlefedettség növelése method szempontból: 50% --> 75%
+  - Mockolás megismerése, kipróbálása - sikertelen.
+- Dokumentáció elkészítése
