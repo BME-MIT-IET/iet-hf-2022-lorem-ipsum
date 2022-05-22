@@ -768,7 +768,7 @@ public class RDFMapperTests {
 	}
 
 	@Test
-	public void teszt3(){
+	public void teszt3readValue(){
 		RDFMapper aMapper = RDFMapper.create();
 
 		SourcedObjectImpl x = new SourcedObjectImpl();
