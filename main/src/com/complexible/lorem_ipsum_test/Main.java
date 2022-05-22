@@ -3,6 +3,9 @@ package com.complexible.lorem_ipsum_test;
 import com.complexible.pinto.RDFMapper;
 import org.openrdf.model.Graph;
 
+import java.awt.*;
+
+@java.lang.SuppressWarnings("all")
 public class Main {
 
     public static void main(String args[]){
@@ -51,11 +54,24 @@ public class Main {
         }
         estimatedTime = System.currentTimeMillis() - startTime;
         //Print out measured time
-        System.out.println("Three attribute + object: " + estimatedTime);
+        System.out.println("Three attribute + object with on attribute: " + estimatedTime);
 
-        /*Iterator<Statement> it = aGraph.iterator();
-        Statement element = it.next();
+        startTime = System.currentTimeMillis();
+        //Measuring time below
+        for(int i = 0; i < 1000000; i++) {
+            aGraph = RDFMapper.create().writeValue(new Person("Michael Grove", "Tokyo", "06303072443", new Car("Ford", "JMU-020")));
+        }
+        estimatedTime = System.currentTimeMillis() - startTime;
+        //Print out measured time
+        System.out.println("Three attribute + object with two attribute: " + estimatedTime);
 
-        System.out.print(StatementResult.getSubject(element) + " " + StatementResult.getPredicate(element) + " " + StatementResult.getObject(element));*/
+        startTime = System.currentTimeMillis();
+        //Measuring time below
+        for(int i = 0; i < 1000000; i++) {
+            aGraph = RDFMapper.create().writeValue(new Person("Michael Grove", "Tokyo", "06303072443", new Car("Ford", "JMU-020", Color.RED)));
+        }
+        estimatedTime = System.currentTimeMillis() - startTime;
+        //Print out measured time
+        System.out.println("Three attribute + object with three attribute: " + estimatedTime);
     }
 }
