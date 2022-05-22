@@ -144,7 +144,7 @@ Az az a tesztek az osztályok 66%-át, a metódusok 64%-át valamint a sorok 71%
     - tesztCodecNemNull() - RDFMapper.java osztály setValue függvény fedetlen sorainak vizsgálása.
     - teszt1getSourceImpl() - SourcedObjectImpl.java getSourceGraph függvény fedetlen sorainak vizsgálása.
     - teszt2setSourceImpl() - SourcedObjectImpl.java setSourceGraph függvény fedetlen sorainak vizsgálása.
-    - teszt3() - RDFMapper.java readValue függvény fedetlen sorainak vizsgálása.
+    - teszt3readValue() - RDFMapper.java readValue függvény fedetlen sorainak vizsgálása.
     - teszt4CollectionFactory() - RDFMapper.java collectionFactory függvény fedetlen sorainak vizsgálása.
     - teszt5MapFactory() - RDFMapper.java mapFactory függvény fedetlen sorainak vizsgálása.
     - teszt6ValueFactory() - RDFMapper.java valueFactory függvény fedetlen sorainak vizsgálása.
