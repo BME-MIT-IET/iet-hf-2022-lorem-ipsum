@@ -17,7 +17,7 @@ public class Main {
         }
         long estimatedTime = System.currentTimeMillis() - startTime;
         //Print out measured time
-        System.err.println("Zero attribute: " + estimatedTime);
+        //System.err.println("Zero attribute: " + estimatedTime);
 
         startTime = System.currentTimeMillis();
         //Measuring time below
@@ -26,7 +26,7 @@ public class Main {
         }
         estimatedTime = System.currentTimeMillis() - startTime;
         //Print out measured time
-        System.err.println("One attribute: " + estimatedTime);
+        //System.err.println("One attribute: " + estimatedTime);
 
         startTime = System.currentTimeMillis();
         //Measuring time below
@@ -35,7 +35,7 @@ public class Main {
         }
         estimatedTime = System.currentTimeMillis() - startTime;
         //Print out measured time
-        System.err.println("Two attribute: " + estimatedTime);
+        // System.err.println("Two attribute: " + estimatedTime);
 
         startTime = System.currentTimeMillis();
         //Measuring time below
@@ -44,7 +44,7 @@ public class Main {
         }
         estimatedTime = System.currentTimeMillis() - startTime;
         //Print out measured time
-        System.err.println("Three attribute: " + estimatedTime);
+        //System.err.println("Three attribute: " + estimatedTime);
 
         startTime = System.currentTimeMillis();
         //Measuring time below
@@ -53,7 +53,7 @@ public class Main {
         }
         estimatedTime = System.currentTimeMillis() - startTime;
         //Print out measured time
-        System.err.println("Three attribute + object with on attribute: " + estimatedTime);
+        //System.err.println("Three attribute + object with on attribute: " + estimatedTime);
 
         startTime = System.currentTimeMillis();
         //Measuring time below
@@ -62,7 +62,7 @@ public class Main {
         }
         estimatedTime = System.currentTimeMillis() - startTime;
         //Print out measured time
-        System.err.println("Three attribute + object with two attribute: " + estimatedTime);
+        // System.err.println("Three attribute + object with two attribute: " + estimatedTime);
 
         startTime = System.currentTimeMillis();
         //Measuring time below
@@ -71,7 +71,7 @@ public class Main {
         }
         estimatedTime = System.currentTimeMillis() - startTime;
         //Print out measured time
-        System.err.println("Three attribute + object with three attribute: " + estimatedTime);
+        // System.err.println("Three attribute + object with three attribute: " + estimatedTime);
 
     }
 }
