@@ -25,6 +25,7 @@ import com.complexible.pinto.annotations.RdfProperty;
 import com.complexible.pinto.annotations.RdfsClass;
 import com.complexible.pinto.codecs.UUIDCodec;
 import com.complexible.pinto.impl.IdentifiableImpl;
+import com.complexible.pinto.impl.SourcedObjectImpl;
 import com.google.common.base.Charsets;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
@@ -34,10 +35,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.openrdf.model.Literal;
-import org.openrdf.model.Model;
-import org.openrdf.model.Resource;
-import org.openrdf.model.Statement;
+import org.openrdf.model.*;
 import org.openrdf.model.impl.SimpleValueFactory;
 import org.openrdf.model.util.Models;
 import org.openrdf.model.vocabulary.XMLSchema;
@@ -57,8 +55,7 @@ import java.util.SortedSet;
 import java.util.TimeZone;
 import java.util.UUID;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * <p></p>
@@ -323,16 +320,6 @@ public class RDFMapperTests {
 	}
 
 	@Test
-	@Ignore
-	public void testURIMapping() throws Exception {
-		// alternative to RdfsClass, verify that if you specify a type URI -> class mapping it is used
-		// test 1, that the rdf:type is included in a top level class
-		// test 2, that the type can be used to find the correct implementation for a property
-		//         eg:  Object getFoo() -> this will be populated by a individual w/ a type :Bar to the class Baz
-		//              so the mapping would specify :Bar <-> Baz
-	}
-
-	@Test
 	public void testUseRdfIdForIdentification() throws Exception {
 		// require ids so the default id generation cannot be used
 		RDFMapper aMapper = RDFMapper.builder()
@@ -482,16 +469,7 @@ public class RDFMapperTests {
 		assertEquals(2, aGraph.size());
 	}
 
-	@Test
-	@Ignore
-	public void testProxyCreation() throws Exception {
 
-		//		assertTrue(aResult instanceof Identifiable);
-		//
-		//		assertTrue(aResult instanceof SourcedObject);
-
-		// and also get the values from the objects
-	}
 
 	@Test
 	public void testUseSerializationAnnotations() throws Exception {
@@ -659,40 +637,6 @@ public class RDFMapperTests {
 		assertEquals(aExpected, aResult);
 	}
 
-	@Test
-	@Ignore
-	public void testReadEnumSet() throws Exception {
-	}
-
-	@Test
-	@Ignore
-	public void testWriteEnumSet() throws Exception {
-	}
-
-	@Test
-	@Ignore
-	public void testReadCustomCollectionMapping() throws Exception {
-	}
-
-	@Test
-	@Ignore
-	public void testWriteWithLangTag() throws Exception {
-	}
-
-	@Test
-	@Ignore
-	public void testReadWithLangTag() throws Exception {
-	}
-
-	@Test(expected = RDFMappingException.class)
-	@Ignore
-	public void testMultipleValuesForNonIterableProperty() throws Exception {
-	}
-
-	@Test(expected = RDFMappingException.class)
-	@Ignore
-	public void testCharBeanTypeWithLongString() throws Exception {
-	}
 
 	@Test(expected = RDFMappingException.class)
 	public void testNoDefaultConstructor() throws Exception {
@@ -777,6 +721,80 @@ public class RDFMapperTests {
 		                                 .build()
 		                                 .readValue(aGraph, ClassWithMap.class,
 		                                                    SimpleValueFactory.getInstance().createIRI("tag:complexible:pinto:06f95e70fea33fcd99e6804b02f96cc9")));
+	}
+
+	//Tesztek
+
+	@Test
+	public void tesztCodecNemNull()throws Exception{
+		final ClassWithMap aObj = new ClassWithMap();
+
+		aObj.mMap = Maps.newLinkedHashMap();
+
+		aObj.mMap.put("bob", UUID.randomUUID());
+		RDFMapper rdfMapper = RDFMapper.builder()
+				.codec(UUID.class, UUIDCodec.Instance)
+				.build();
+		final Model aGraph = rdfMapper.writeValue(aObj);
+
+		assertFalse(aGraph.isEmpty());
+	}
+
+	@Test
+	public void teszt1getSourceImpl(){
+		SourcedObjectImpl x = new SourcedObjectImpl();
+		assertNull(x.getSourceGraph());
+	}
+
+	@Test
+	public void teszt2setSourceImpl(){
+		SourcedObjectImpl x = new SourcedObjectImpl();
+
+		RDFMapper aMapper = RDFMapper.create();
+		ClassWithPrimitives aObj = new ClassWithPrimitives();
+		aObj.setString("str value");
+		aObj.setInt(8);
+		aObj.setURI(java.net.URI.create("urn:any"));
+		aObj.setFloat(4.5f);
+		aObj.setDouble(20.22);
+		aObj.setChar('o');
+		aObj.id(SimpleValueFactory.getInstance().createIRI("tag:complexible:pinto:3d1c9ece37c3f9ee6068440cf9a383cc"));
+
+		assertNull(aMapper.readValue(x.getSourceGraph(), null, null));
+		Model model = aMapper.writeValue(aObj);
+		x.setSourceGraph(model);
+
+		assertNotNull(x.getSourceGraph());
+	}
+
+	@Test
+	public void teszt3(){
+		RDFMapper aMapper = RDFMapper.create();
+
+		SourcedObjectImpl x = new SourcedObjectImpl();
+
+		assertNull(aMapper.readValue(x.getSourceGraph(), null, null));
+	}
+
+	@Test
+	public void teszt4CollectionFactory() {
+		RDFMapper.CollectionFactory mCollectionFactory = new RDFMapper.DefaultCollectionFactory();
+		RDFMapper.Builder collectionFactory = RDFMapper.builder().collectionFactory(mCollectionFactory);
+		assertNotNull(collectionFactory);
+	}
+
+	@Test
+	public void teszt5MapFactory() {
+		RDFMapper.MapFactory mMapFactory = new RDFMapper.DefaultMapFactory();
+		RDFMapper.Builder mapFactory = RDFMapper.builder().mapFactory(mMapFactory);
+		assertNotNull(mapFactory);
+	}
+
+	@Test
+	public void teszt6ValueFactory() {
+		ValueFactory mValueFactory = SimpleValueFactory.getInstance();
+		RDFMapper.Builder valueFactory = RDFMapper.builder().valueFactory(mValueFactory);
+		assertNotNull(valueFactory);
 	}
 
 	public static final class Files3 {
