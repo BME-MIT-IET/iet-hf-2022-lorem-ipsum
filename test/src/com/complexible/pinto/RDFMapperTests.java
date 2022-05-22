@@ -35,6 +35,7 @@ import net.bytebuddy.implementation.bytecode.collection.CollectionFactory;
 import org.junit.*;
 import org.openrdf.model.*;
 import org.openrdf.model.impl.EmptyModel;
+import org.openrdf.model.impl.SimpleNamespace;
 import org.openrdf.model.impl.SimpleValueFactory;
 import org.openrdf.model.util.Models;
 import org.openrdf.model.vocabulary.XMLSchema;
@@ -785,38 +786,72 @@ public class RDFMapperTests {
 	//Tesztek
 
 	@Test
-	public void teszt1(){
+	public void tesztCodecNemNull()throws Exception{
+		final ClassWithMap aObj = new ClassWithMap();
+
+		aObj.mMap = Maps.newLinkedHashMap();
+
+		aObj.mMap.put("bob", UUID.randomUUID());
+		RDFMapper rdfMapper = RDFMapper.builder()
+				.codec(UUID.class, UUIDCodec.Instance)
+				.build();
+		final Model aGraph = rdfMapper.writeValue(aObj);
+
+		assertFalse(aGraph.isEmpty());
+	}
+
+	@Test
+	public void teszt1getSourceImpl(){
+		SourcedObjectImpl x = new SourcedObjectImpl();
+		assertNull(x.getSourceGraph());
+	}
+
+	@Test
+	public void teszt2setSourceImpl(){
+		SourcedObjectImpl x = new SourcedObjectImpl();
+
+		RDFMapper aMapper = RDFMapper.create();
+		ClassWithPrimitives aObj = new ClassWithPrimitives();
+		aObj.setString("str value");
+		aObj.setInt(8);
+		aObj.setURI(java.net.URI.create("urn:any"));
+		aObj.setFloat(4.5f);
+		aObj.setDouble(20.22);
+		aObj.setChar('o');
+		aObj.id(SimpleValueFactory.getInstance().createIRI("tag:complexible:pinto:3d1c9ece37c3f9ee6068440cf9a383cc"));
+
+		assertNull(aMapper.readValue(x.getSourceGraph(), null, null));
+		Model model = aMapper.writeValue(aObj);
+		x.setSourceGraph(model);
+
+		assertNotNull(x.getSourceGraph());
+	}
+
+	@Test
+	public void teszt3(){
 		RDFMapper aMapper = RDFMapper.create();
 
 		SourcedObjectImpl x = new SourcedObjectImpl();
 
-
-		aMapper.readValue(x.getSourceGraph(),null, null);
-		assertEquals(aMapper.readValue(x.getSourceGraph(),null, null), null);
-
-	}
-	@Test
-	public void teszt2(){
-		SourcedObjectImpl x = new SourcedObjectImpl();
-		assertEquals(x.getSourceGraph(), null);
+		assertNull(aMapper.readValue(x.getSourceGraph(), null, null));
 	}
 
 	@Test
-	public void teszt3CollectionFactory() throws Exception {
+	public void teszt4CollectionFactory() {
 		RDFMapper.CollectionFactory mCollectionFactory = new RDFMapper.DefaultCollectionFactory();
 		RDFMapper.Builder collectionFactory = RDFMapper.builder().collectionFactory(mCollectionFactory);
 		assertNotNull(collectionFactory);
 	}
 
 	@Test
-	public void teszt4MapFactory() throws Exception {
+	public void teszt5MapFactory() {
 		RDFMapper.MapFactory mMapFactory = new RDFMapper.DefaultMapFactory();
 		RDFMapper.Builder mapFactory = RDFMapper.builder().mapFactory(mMapFactory);
 		assertNotNull(mapFactory);
 	}
 
 	@Test
-	public void teszt5ValueFactory() throws Exception {
+	public void teszt6ValueFactory() {
 		ValueFactory mValueFactory = SimpleValueFactory.getInstance();
 		RDFMapper.Builder valueFactory = RDFMapper.builder().valueFactory(mValueFactory);
 		assertNotNull(valueFactory);

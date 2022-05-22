@@ -73,8 +73,8 @@ dependencies {
 	testCompile 'junit:junit:4.11'
 
 
-	//testCompile 'org.mockito:mockito-inline:3.12.4'
-	//testCompile 'org.mockito:mockito-junit-jupiter:3.12.4'
+	testCompile 'org.mockito:mockito-inline:3.12.4'
+	testCompile 'org.mockito:mockito-junit-jupiter:3.12.4'
 }
 
 tasks.withType(Test) {
