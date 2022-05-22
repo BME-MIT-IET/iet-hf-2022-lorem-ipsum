@@ -116,3 +116,11 @@ Az az a tesztek az osztályok 66%-át, a metódusok 64%-át valamint a sorok 71%
 - Performanicabeli romlás az egy egy új apraméterenként kb. 10% volt, 1 millió iterációnál az 1 paraméteres teszt 3000ms -ig futott, 2 -nél már 3300ms
 - Performanciabeli romlás egymásba ágyazott objektumoknál viszont már jelentősebb, 3500ms- ről 5600ms -re ugrott, egy egyszerűbb Car osztály hozzáadásától is
    - Több egymásba ágyazott objektumnál ez hamar összeadódhat!
+#### Mérések:
+0 paraméter: 2687
+1 paraméter: 2931
+2 paraméter: 3256
+3 paraméter: 3581
+3 paraméter + objektum 1 paraméterrel: 5536
+3 paraméter + objektum 2 paraméterrel: 5431
+3 paraméter + objektum 3 paraméterrel: 5500
