@@ -127,23 +127,36 @@ Az az a tesztek az osztályok 66%-át, a metódusok 64%-át valamint a sorok 71%
 
 ## Unit Test implementálása - Péter Noémi Zsuzsanna
 
-- Unit tesztekkel való ismerkedés, előadás és gyakorlat átnézése.
-- Először a verziók beállításával kellett foglalkoznom.
-- Gradle megjavítása. Projekt futtatható állapotba való állítása.
+- Unit tesztekkel való ismerkedés
+    - Előadás és gyakorlat átnézése.
+- Verziók beállítása, problémák kezelése.
+- Gradle megjavítása.
+- Projekt futtatható állapotba való állítása.
 - Kód értelmezése.
-- Jacoco megismerése és kipróbálása
+- Jacoco megismerése, kipróbálása
     - Sikertelen üzembehelyezés.
 - IntelliJ Code Coverage használata
-    - kezdeti elért lefedettség megvizsgálása
-- Unit tesztek készítése az RDFMapperTests.java fájlba:
+    - Kezdeti elért lefedettség megvizsgálása.
+- Mockolás megismerése, kipróbálása
+    - Sikertelen művelet.
+      - Dependency Injection problémák.
+- Unit tesztek készítése az RDFMapperTests.java fájlba
+    - tesztCodecNemNull() - RDFMapper.java osztály setValue függvény fedetlen sorainak vizsgálása.
+    - teszt1getSourceImpl() - SourcedObjectImpl.java getSourceGraph függvény fedetlen sorainak vizsgálása.
+    - teszt2setSourceImpl() - SourcedObjectImpl.java setSourceGraph függvény fedetlen sorainak vizsgálása.
+    - teszt3() - RDFMapper.java readValue függvény fedetlen sorainak vizsgálása.
+    - teszt4CollectionFactory() - RDFMapper.java collectionFactory függvény fedetlen sorainak vizsgálása.
+    - teszt5MapFactory() - RDFMapper.java mapFactory függvény fedetlen sorainak vizsgálása.
+    - teszt6ValueFactory() - RDFMapper.java valueFactory függvény fedetlen sorainak vizsgálása.
 
 Végső kódlefedettség:
 
-
+![](unittest_lefedettseg.png)
 
   - RDFMapper.java osztályban levő függvények tesztelése
-      - kódlefedettség növelése method szempontból: 86% --> 91%
+      - kódlefedettség növelése metódusok szempontjából: 86% --> 93%
+      - kódlefedettség növelése kódsorok szempontjából: 77% --> 80%
   - SourcedObjectImpl.java osztályban levő függvények tesztelése
-      - kódlefedettség növelése method szempontból: 50% --> 75%
-  - Mockolás megismerése, kipróbálása - sikertelen.
+      - kódlefedettség növelése metódusok szempontjából: 0% --> 100%
+      - kódlefedettség növelése kódsorok szempontjából: 0% --> 100%
 - Dokumentáció elkészítése
