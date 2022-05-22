@@ -11,7 +11,6 @@ public class Main {
     public static void main(String args[]){
         Graph aGraph = null;
 
-        String phoneNumber =
         long startTime = System.currentTimeMillis();
         //Measuring time below
         for(int i = 0; i < 1000000; i++) {
