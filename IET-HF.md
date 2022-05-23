@@ -124,3 +124,39 @@ Az az a tesztek az osztályok 66%-át, a metódusok 64%-át valamint a sorok 71%
 3 paraméter + objektum 1 paraméterrel: 5536
 3 paraméter + objektum 2 paraméterrel: 5431
 3 paraméter + objektum 3 paraméterrel: 5500
+
+## Unit Test implementálása - Péter Noémi Zsuzsanna
+
+- Unit tesztekkel való ismerkedés
+    - Előadás és gyakorlat átnézése.
+- Verziók beállítása, problémák kezelése.
+- Gradle megjavítása.
+- Projekt futtatható állapotba való állítása.
+- Kód értelmezése.
+- Jacoco megismerése, kipróbálása
+    - Sikertelen üzembehelyezés.
+- IntelliJ Code Coverage használata
+    - Kezdeti elért lefedettség megvizsgálása.
+- Mockolás megismerése, kipróbálása
+    - Sikertelen művelet.
+      - Dependency Injection problémák.
+- Unit tesztek készítése az RDFMapperTests.java fájlba
+    - tesztCodecNemNull() - RDFMapper.java osztály setValue függvény fedetlen sorainak vizsgálása.
+    - teszt1getSourceImpl() - SourcedObjectImpl.java getSourceGraph függvény fedetlen sorainak vizsgálása.
+    - teszt2setSourceImpl() - SourcedObjectImpl.java setSourceGraph függvény fedetlen sorainak vizsgálása.
+    - teszt3readValue() - RDFMapper.java readValue függvény fedetlen sorainak vizsgálása.
+    - teszt4CollectionFactory() - RDFMapper.java collectionFactory függvény fedetlen sorainak vizsgálása.
+    - teszt5MapFactory() - RDFMapper.java mapFactory függvény fedetlen sorainak vizsgálása.
+    - teszt6ValueFactory() - RDFMapper.java valueFactory függvény fedetlen sorainak vizsgálása.
+
+Végső kódlefedettség:
+
+![](unittest_lefedettseg.png)
+
+  - RDFMapper.java osztályban levő függvények tesztelése
+      - kódlefedettség növelése metódusok szempontjából: 86% --> 93%
+      - kódlefedettség növelése kódsorok szempontjából: 77% --> 80%
+  - SourcedObjectImpl.java osztályban levő függvények tesztelése
+      - kódlefedettség növelése metódusok szempontjából: 0% --> 100%
+      - kódlefedettség növelése kódsorok szempontjából: 0% --> 100%
+- Dokumentáció elkészítése
